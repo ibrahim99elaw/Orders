@@ -1,0 +1,102 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <header>
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+        <!-- Font Awesome icon for menu toggle -->
+      </button>
+      <div class="logo">
+        <p><span>Or</span>der</p>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a class="active" href="menu.html">Menu</a></li>
+          <li><a  href="order.html">Order</a></li>
+          <li><a href="requests.html">Requests</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping" style="color: #00ff11"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="acount">
+        <p>acount</p>
+        <i class="fa-solid fa-user" style="color: #b197fc"></i>
+      </div>
+    </header>
+
+    <div class="menu-item">
+      <div class="add-item">
+        <button>
+          <a href="add_item.html">
+            <i
+              class="fa-duotone fa-plus"
+              style="
+                --fa-primary-color: #176e18;
+                --fa-secondary-color: #34a234;
+              "></i>
+
+            Add Item
+          </a>
+        </button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Num</th>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Available</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <img
+                class="icon"
+                src="img/Fattoush salad.png"
+                alt="Item Image"
+                width="50" />
+            </td>
+            <td>Name</td>
+            <td>Description of the item...</td>
+            <td>200 $</td>
+            <td class="available">Available</td>
+            <td>Category</td>
+            <td class="actions">
+              <span class="edit"
+                ><i class="fa-solid fa-pen-to-square" style="color: #3a10d1"></i
+              ></span>
+              <span class="delete"
+                ><i class="fa-solid fa-trash-can" style="color: #f60909"></i
+              ></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

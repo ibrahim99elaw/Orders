@@ -1,0 +1,82 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Add item</title>
+  </head>
+  <body>
+    <header>
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+        <!-- Font Awesome icon for menu toggle -->
+      </button>
+      <div class="logo">
+        <p><span>Or</span>der</p>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a class="active" href="order.html">Order</a></li>
+          <li><a href="requests.html">Requests</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping" style="color: #00ff11"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="acount">
+        <p>acount</p>
+        <i class="fa-solid fa-user" style="color: #b197fc"></i>
+      </div>
+    </header>
+    <div class="add_items">
+      <div class="form-container">
+        <h2>Add Item</h2>
+        <img src="img/Fattoush salad.png" alt="Item Photo" />
+        <p>Photo</p>
+        <form>
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="name" placeholder="Food name" />
+
+          <label for="description">Description :</label>
+          <input
+            type="text"
+            id="description"
+            name="description"
+            placeholder="Description of the item" />
+
+          <label for="price">Price :</label>
+          <input type="text" id="price" name="price" placeholder="Food price" />
+
+          <label for="category">Category :</label>
+          <select id="category" name="category">
+            <option value="appetizers">food</option>
+            <option value="main_courses">drinks</option>
+            <option value="desserts">Desserts</option>
+          </select>
+          <label for="available">Available :</label>
+          <div class="available-container">
+            <select id="category" name="Available">
+              <option value="appetizers">Available</option>
+              <option value="main_courses">Not Available</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
