@@ -103,7 +103,8 @@ header .acount i{
   cursor: pointer;
 }
 
-/*  media */
+/* start responsive*/
+
 @media (max-width: 1024px) {
     nav ul {
         gap: 20px;
@@ -199,7 +200,7 @@ header .acount i{
 .login-page{
     display: flex;
     justify-content: center;
-    /* margin-top: 100px; */
+
 }
  .login{
     background: url(img/download.jpeg) no-repeat;
@@ -254,14 +255,14 @@ header .acount i{
     font-weight: bold;
     padding: 10px;
     transition: 0.5s;
-    /* box-shadow: 2px 2px 0px #00c853; */
     cursor: pointer;
 }
 .login form  button:hover{
 background-color: #333;
 }
 
-/* وسائل الإعلام */
+/* start responsive*/
+
 @media (max-width: 768px) {
     .login {
         width: 90%;
@@ -386,9 +387,9 @@ background-color: #333;
     background-color:#00c853;
     color: white;
     font-size:30px;
-font-weight: bold;
-cursor: pointer;
-transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
 }
 .land button:hover{
     height: 54px;
@@ -399,7 +400,7 @@ transition: 0.5s;
 
 }
 
-/* وسائل الإعلام */
+/* start responsive*/
 @media (max-width: 1024px) {
     .landing {
         padding: 20px 50px;
@@ -559,20 +560,22 @@ transition: 0.5s;
   .menu-item {
             margin: 50px;
         }
-  .add-item {
-            display: flex;
-            justify-content: flex-end;
-            margin-bottom: 10px;
-            text-align: center;
+   .add-item {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        text-align: center;
 
         }
-          .add-item i{
+
+        .add-item i{
             font-size: 20px;
             background-color: white;
             color: #28a745;
             padding: 2px 7px;
             border-radius: 20px;
-          }
+        }
+        
         .add-item button {
             background-color: #28a745;
             color: white;
@@ -584,22 +587,27 @@ transition: 0.5s;
             text-align: center;
             align-items: center;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
         }
+
         th, td {
             border: 1px solid #ddd;
             text-align: center;
             padding: 8px 0px;
         }
+
         th {
             background-color: #28a745;
             color: white;
         }
+
         .available {
             color: green;
         }
+
         .actions{
             display: flex;
             justify-content:center;
@@ -608,22 +616,27 @@ transition: 0.5s;
             align-items: center;
             text-align: center;
         }
+
         .actions i{
             width: 20px;
             min-height: 50px;
             cursor: pointer;
         }
+
         .edit , .delete{
             font-size: 24px;
         }
+
         .edit svg {
             color: blue;
         }
+
         .delete svg {
             color: red;
         }
 
-        /* وسائل الإعلام */
+/* start responsive*/
+
 @media (max-width: 1024px) {
     .menu-item {
         margin: 30px 5px;
@@ -664,6 +677,7 @@ transition: 0.5s;
     .edit, .delete {
         font-size: 22px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -706,6 +720,7 @@ transition: 0.5s;
     .edit, .delete {
         font-size: 20px;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -748,6 +763,7 @@ transition: 0.5s;
     .edit, .delete {
         font-size: 18px;
     }
+
 }
         /* end menu */
 
@@ -825,6 +841,7 @@ transition: 0.5s;
     justify-content: center;
     gap: 30px;
     margin-bottom: 50px;
+
 }
 
 .category{
@@ -835,16 +852,13 @@ transition: 0.5s;
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
-    
-        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
-}
+    text-align: center;
+    }
 
 .card-list{
-    width: 98%;
+    width: 80%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* flex-direction: row;*/
     gap: 30px; 
     overflow-x: auto;
     flex-wrap: nowrap;
@@ -864,7 +878,7 @@ transition: 0.5s;
     flex-direction: row;
     align-items: center;
     gap: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 
 }
 .card-list .card-item img{
@@ -899,15 +913,15 @@ transition: 0.5s;
  }
 
 .orders-card{
-    width: 98%;
+    width: 80%;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    /* flex-direction: row;*/
     gap: 30px; 
     overflow-x: auto;
     flex-wrap: nowrap;
     padding: 10px 0;
+        padding: 10px 20px;
+    border-radius: 20px;
 }
 .orders-card::-webkit-scrollbar{
     display: none;
