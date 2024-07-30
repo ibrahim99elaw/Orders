@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>login for admin</title>
+    <title>login for customer</title>
   </head>
   <body>
     <header>
@@ -26,7 +26,7 @@
         <ul class="menu">
           <li><a href="home.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Order</a></li>
+          <li><a  href="order.html">Order</a></li>
           <li><a href="requests.html">Requests</a></li>
           <li><a href="statistics.html">Statistics</a></li>
           <li>
@@ -43,26 +43,30 @@
     </header>
 
     <div class="login-page">
-      <form class="login-form">
-        <h2 class="loader"></h2>
-        <hr />
-        <br />
-        <br />
-        <br />
-        Username:<input type="text" placeholder="Enter username" />
-        password:<input type="password" placeholder="Enter password" />
-        <button class="login-button"><a href="menu.html">Login</a></button>
-        <br />
-        <br />
-        <hr />
-        <br />
-        <div class="forget">
-          <div>
-            <p>Forget password Click <a href="">here</a></p>
-          </div>
-        </div>
-      </form>
+        <form class="login-form">
+            <h2  class="loader"></h2>
+            <hr>
+            <br>
+            <br>
+            <br>
+            Email:<input type="email" placeholder="Enter your Email">
+            password:<input type="password" placeholder="Enter your password">
+            <button class="login-button"><a href="order.html">Log in</a></button>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div class="forget">
+                <div><p>Forget password</p>
+                    Click <a href="">here</a>
+                </div>
+                <div><p>Dont have an acount</p>
+                    Click <a href="sign-up.html">here</a>
+                </div>
+            </div>
+        </form>
     </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
